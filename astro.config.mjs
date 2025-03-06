@@ -10,15 +10,28 @@ export default defineConfig({
       title: "The Gorbachev Project",
       sidebar: [
         {
-          label: "Guides",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: "Example Guide", slug: "guides/example" },
-          ],
+          label: "Counters",
+          autogenerate: { directory: "counters" },
         },
         {
-          label: "Reference",
-          autogenerate: { directory: "reference" },
+          label: "Electrical",
+          autogenerate: { directory: "electrical" },
+        },
+        {
+          label: "Flooring",
+          autogenerate: { directory: "flooring" },
+        },
+        {
+          label: "Furniture",
+          autogenerate: { directory: "furniture" },
+        },
+        {
+          label: "HVAC",
+          autogenerate: { directory: "hvac" },
+        },
+        {
+          label: "Plumbing",
+          autogenerate: { directory: "plumbing" },
         },
       ],
       plugins: [starlightThemeFlexoki()],
